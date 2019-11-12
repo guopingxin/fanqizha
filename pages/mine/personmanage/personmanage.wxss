@@ -1,0 +1,153 @@
+/* pages/mine/personmanage/personmanage.wxss */
+.container{
+  width: 100%;
+  position: relative;
+
+}
+
+.bg-absolute{
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 40rpx;
+  background: #366ff3;
+}
+
+.top-search{
+  width: 92%;
+  margin: 0 4%;
+  display: flex;
+  justify-content: space-between;
+  height: 80rpx;
+  align-items: center;
+}
+
+.search-box{
+  position: relative;
+  display: flex;
+  width: 86%;
+  height: 60rpx;
+  background: white;
+  border-radius: 30rpx;
+  box-shadow: 0 0 2rpx 2rpx rgba(241, 241, 241, 0.5);
+  align-items: center;
+  padding: 0 20rpx;
+}
+
+.search-box image{
+  position: absolute;
+  right: 14rpx;
+  width: 40rpx;
+  height: 40rpx;
+  top: 8rpx;
+}
+
+.add{
+  width: 70rpx;
+  height: 70rpx;
+}
+
+.operator{
+  position: relative;
+  width: 96%;
+  margin-left: 4%;
+}
+
+.letter{
+  position: absolute;
+  right: 4rpx;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  color: #366ff3;
+}
+
+.letter-item{
+  color: #366ff3;
+  margin-top: 20rpx;
+}
+
+.operatorname{
+  padding: 26rpx 0 26rpx 0;
+  font-family: PingFangSC-Semibold, sans-serif;
+  font-size: 36rpx;
+  margin-right: 50rpx;
+  border-bottom: 1rpx solid #ececec;
+}
+
+.project-item{
+  margin-bottom: 14rpx;
+}
+
+.project-item text{
+
+  font-size: 20rpx;
+  padding: 5rpx 16rpx;
+  background: #366ff3;
+  color: white;
+  border-radius: 30rpx;
+  margin: 14rpx 20rpx 0 0;
+}
+
+.whole{
+  width: 100%;
+  height: 100%;
+  background: rgba(20, 20, 20, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0
+}
+
+.add-box{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 400rpx;
+  position: fixed;
+  bottom: 0;
+  background: white;
+  justify-content: space-around;
+}
+
+.add-box image{
+  width: 180rpx;
+  height: 180rpx;
+}
+
+.backlogin-box{
+  background: white;
+  width: 100%;
+  height: 300rpx;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.backlogin{
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  border-bottom: 1rpx solid rgb(241, 241, 241);
+  color: #b9b9b9;
+  font-size: 36rpx;
+  width: 100%;
+  justify-content: center;
+}
+
+.border{
+  border-bottom: 6rpx solid #e8e8e8 !important;
+  color: #202020 !important;
+}
+
+.border1{
+  border-bottom: 0 !important;
+  color: #202020 !important;
+}
+
+
+
+

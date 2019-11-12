@@ -1,0 +1,48 @@
+<!--pages/home/home.wxml-->
+<view class="container">
+  <view class="bg-absolute"></view>
+  <view class="search-box" bindtap="more">
+    <image src="/images/home-search.png"></image>
+    <!-- <input type="text" placeholder="请输入车牌号" placeholder-style="color:#b9b9b9" bindinput="inputcarNo" bindconfirm="inputconfirm"></input> -->
+    <view style="color:#b9b9b9">请输入车牌号</view>
+  </view>
+
+  <view class="case-statistics">
+    <view class="case-title">案件统计</view>
+    <view class="case-num">
+      <view>
+        <view class="font">{{count.today}}</view>
+        <view>今日案件</view>
+      </view>
+      <view>
+        <view class="font">{{count.week}}</view>
+        <view>本周案件</view>
+      </view>
+      <view>
+        <view class="font">{{count.month}}</view>
+        <view>本月案件</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="case-list">
+    <view class="line"></view>
+    <view>最新案件统计</view>
+    <view class="more" bindtap="more">
+      <text>更多</text>
+      <view class="arrows"></view>
+    </view>
+  </view>
+
+  <caselist caselist="{{caselist}}" serialshow="{{serialshow}}"/>
+
+  <block wx:if="{{noData}}" >
+  <view animation="{{animationData}}" class="nodata">
+    <view>{{tip}}</view>
+  </view>
+  </block>
+
+  <view class="add" bindtap="addcase">
+    <image src="/images/icon_tianjia@2x.png"></image>
+  </view>
+</view>

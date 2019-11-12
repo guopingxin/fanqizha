@@ -1,0 +1,71 @@
+<!--pages/mine/query/querydetail/querydetail.wxml-->
+<view class="container">
+  <view class="bg-absolute"></view>
+  <view class="top-query">
+    <view class="carid">陕A14785</view>
+    <view class="query-degree">
+      <text class="query-item">查询次数</text>
+      <text class="query-item margin">100</text>
+      <text class="query-item">风险程度</text>
+      <view class="degree-box">
+        <view class="degree-tip">
+          <text>低</text>
+          <text>中</text>
+          <text>高</text>
+        </view>
+        <view class="degree-tip">
+          <text class="degree-color1"></text>
+          <text class="degree-color2"></text>
+          <text class="degree-color3"></text>
+        </view>
+      </view>
+    </view>
+
+    <view class="cartiplist">
+      <block wx:for="{{cartiplist}}" wx:key="">
+        <view class="cartip">{{item}}</view>
+      </block>
+    </view>
+  </view>
+
+  <view class="cartitle">车辆承保历史</view>
+  <view class="car-infor">
+    <block wx:for="{{carunderwriting}}" wx:key="">
+      <view class="carunderwriting-box">
+        <text>{{item.time}}</text>
+        <text>{{item.add}}</text>
+        <text>{{item.company}}</text>
+      </view>
+    </block>
+  </view>
+
+  <view class="cartitle">车辆过户信息</view>
+  <view class="car-infor">
+    <block wx:for="{{cartransfer}}" wx:key="">
+      <view class="carunderwriting-box">
+        <text>{{item.time}}</text>
+        <text>{{item.transfer}}</text>
+        <text>{{item.name}}</text>
+        <text>{{item.company}}</text>
+      </view>
+    </block>
+  </view>
+
+  <view class="cartitle">
+    <text>车辆出险</text>
+    <text class="risknum"> ({{risk}}次)</text>
+  </view>
+  <view class="car-infor">
+    <block wx:for="{{riskinfor}}" wx:key="">
+      <view class="carunderwriting-box">
+        <text>{{item.time}}</text>
+        <text>{{item.carid}}</text>
+        <view class="todetail" bindtap="todetail">
+          <view class="arrows"></view>
+          <view class="arrows"></view>
+          <text>详情</text>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

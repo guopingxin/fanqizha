@@ -1,0 +1,5 @@
+<!--pages/message/message.wxml-->
+
+<view class="container">
+  <message-item />
+</view>

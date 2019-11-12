@@ -1,0 +1,33 @@
+<!--pages/find/weituodetail/weituodetail.wxml-->
+<view class="container">
+  <view class="weituoitem">
+    <text class="weituotitle">委托城市</text>
+    <text>北京</text>
+  </view>
+  <view class="weituoitem">
+    <text class="weituotitle">案件号</text>
+    <text>1456325874125899632587452</text>
+  </view>
+  <view class="weituoitem">
+    <text class="weituotitle">案件分类</text>
+    <text>车务调查</text>
+  </view>
+  <view class="weituoitem">
+    <text class="weituotitle">委托类型</text>
+    <text>全面委托</text>
+  </view>
+  <view class="weituoitem">
+    <text class="weituotitle">案件时间</text>
+    <text>2019-09-10 15:50</text>
+  </view>
+  <view class="weituoitem">
+    <text class="weituotitle">案件介绍</text>
+    <text>中银项目</text>
+  </view>
+  <view class="weituoitem">
+    <text class="weituotitle">案件金额</text>
+    <text>120元</text>
+  </view>
+
+  <view class="jiedan">接单</view>
+</view>

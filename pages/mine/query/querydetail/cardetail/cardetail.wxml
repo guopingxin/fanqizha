@@ -1,0 +1,89 @@
+<!--pages/mine/query/querydetail/cardetail/cardetail.wxml-->
+<view class="container">
+  <view class="base-title">基本资料</view>
+  <view class="add">
+    <view class="time">出险地点</view>
+    <text>陕西 西安</text>
+  </view>
+  <view class="add">
+    <view class="time">出险时间</view>
+    <text class="date">2018-12-12</text>
+    <text>15:59</text>
+  </view>
+
+  <view class="add">
+    <view class="time">报案电话</view>
+    <text class="date">{{tel}}</text>
+    <image src="https://612d-a-data-1a3ebf-1257782233.tcb.qcloud.la/fanqizhalianmeng/eye-light.png?sign=b00cb2a60d30a77c737b5c6b1b91dc98&t=1568617170" class="eye" catchtap="onEye" wx:if="{{eyeTag}}"></image>
+    <image src="https://612d-a-data-1a3ebf-1257782233.tcb.qcloud.la/fanqizhalianmeng/eye-gray.png?sign=50be636c377cb333007ef290d26aba54&t=1568617236" class="eye" catchtap="onEye" wx:else></image>
+  </view>
+
+  <view class="add">
+    <view class="time">驾驶员电话</view>
+    <text class="date">{{tel}}</text>
+    <image src="https://612d-a-data-1a3ebf-1257782233.tcb.qcloud.la/fanqizhalianmeng/eye-light.png?sign=b00cb2a60d30a77c737b5c6b1b91dc98&t=1568617170" class="eye" catchtap="onEye" wx:if="{{eyeTag}}"></image>
+    <image src="https://612d-a-data-1a3ebf-1257782233.tcb.qcloud.la/fanqizhalianmeng/eye-gray.png?sign=50be636c377cb333007ef290d26aba54&t=1568617236" class="eye" catchtap="onEye" wx:else></image>
+  </view>
+
+  <view class="add">
+    <view class="time">被保人</view>
+    <text>张三</text>
+  </view>
+
+  <view class="add">
+    <view class="time">被保人电话</view>
+    <text class="date">{{tel}}</text>
+    <image src="https://612d-a-data-1a3ebf-1257782233.tcb.qcloud.la/fanqizhalianmeng/eye-light.png?sign=b00cb2a60d30a77c737b5c6b1b91dc98&t=1568617170" class="eye" catchtap="onEye" wx:if="{{eyeTag}}"></image>
+    <image src="https://612d-a-data-1a3ebf-1257782233.tcb.qcloud.la/fanqizhalianmeng/eye-gray.png?sign=50be636c377cb333007ef290d26aba54&t=1568617236" class="eye" catchtap="onEye" wx:else></image>
+  </view>
+
+  <view class="add line">
+    <view class="time">出险原因</view>
+    <text>两车相撞</text>
+  </view>
+
+  <view class="base-title">事故处理情况</view>
+
+  <view class="accident">报交警处理/快速理赔</view>
+
+  <view class="base-title">事故照片</view>
+
+  <view class="accident-box accident">
+    <block wx:for="{{accidentimg}}"  wx:key="">
+      <image src="{{item}}" class="accidentimg"></image>
+    </block>
+  </view>
+
+  <view class="base-title">车辆维修情况</view>
+
+  <view class="add line">
+    <view class="time">更换发动机</view>
+    <text>5000元</text>
+  </view>
+
+  <view class="base-title">案件处理情况</view>
+  <view class="add">
+    <view class="time">是否拒赔</view>
+    <text class="isf">是</text>
+    <icon type="success" size="14" color="orange"></icon>
+    <text class="isf">否</text>
+    <icon type="success" size="14" color="#a7a8aa"></icon>
+  </view>
+
+  <view class="add">
+    <view class="time">是否减损</view>
+    <text class="isf">是</text>
+    <icon type="success" size="14" color="#a7a8aa"></icon>
+    <text class="isf">否</text>
+    <icon type="success" size="14" color="orange"></icon>
+  </view>
+
+  <view class="add">
+    <view class="time">是否赔偿</view>
+    <text class="isf">是</text>
+    <icon type="success" size="14" color="orange"></icon>
+    <text class="isf">否</text>
+    <icon type="success" size="14" color="#a7a8aa"></icon>
+  </view>
+
+</view>

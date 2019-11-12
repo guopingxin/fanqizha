@@ -1,0 +1,184 @@
+/* pages/details/details.wxss */
+
+.container{
+  position: relative;
+  font-size: 24rpx;
+}
+
+.bg-absolute{
+  position: absolute;
+  top: -60rpx;
+  width: 100%;
+  height: 246rpx;
+  background: #366ff3;
+  z-index: -2;
+}
+
+.logo-absolute{
+  position: absolute;
+  top: -35rpx;
+  z-index: 10;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.logo-absolute image{
+  width: 120rpx;
+  height: 120rpx;
+}
+
+.blue{
+  width: 100%;
+  margin-bottom: 120rpx;
+  padding-bottom: 120rpx;
+}
+
+.blue image{
+  width: 100%;
+  height: 60rpx;
+}
+
+.details{
+  width: 90%;
+  margin: 60rpx 5% 0 5%;
+  display: flex;
+  flex-direction: column;
+  /* background: url(https://6368-cheguanjia1-beb14e-1259199411.tcb.qcloud.la/home/detailsbg.png?sign=06fe4b0cf6a981efeb55a808078b3261&t=1564650710) no-repeat left top;
+  background-size: 100% 100%; */
+  
+}
+
+.investigation{
+  width: 100%;
+ 
+  font-family: PingFangSC-Semibold, sans-serif;
+  font-size: 36rpx;
+  /* margin-top: 90rpx; */
+  background:url(https://6661-fanqizhalianmeng-8ygjc-1300247030.tcb.qcloud.la/caseprogress/detailsbg1.png?sign=893f7d014ca65353329e4ccc4d29876c&t=1568793439) no-repeat left top;
+  background-size: 100% 100%;
+  height: 206rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20rpx;
+}
+
+.case-details{
+  background:url(https://6661-fanqizhalianmeng-8ygjc-1300247030.tcb.qcloud.la/caseprogress/detailsbg.png?sign=b65f7fd904aeb23891aa7f2311c4d1d8&t=1568793453) no-repeat left top;
+  background-size: 100% 100%;
+  /* margin-bottom: 120rpx;
+  padding-bottom: 120rpx; */
+  
+}
+
+.details-tip{
+  display: flex;
+  margin-left: 30rpx;
+  align-items: center;
+}
+
+.tip{
+  margin-top: 30rpx;
+}
+
+.line{
+  width: 6rpx;
+  height: 22rpx;
+  background: #366ff3;
+  margin-right: 10rpx;
+}
+
+.details-tip text{
+  font-family: PingFangSC-Semibold, sans-serif;
+  font-size: 34rpx;
+}
+
+.case-no{
+  display: flex;
+  justify-content: space-between;
+  padding: 12rpx 0;
+  color: #505050;
+  border-bottom: 1rpx solid #f6f6f6;
+  margin: 0 46rpx;
+}
+
+.case-no input{
+  text-align: right;
+}
+
+.color{
+  color: #1c1d20;
+}
+
+.case-describe{
+  display: flex;
+  flex-direction: column;
+  color: #505050;
+  margin:0 46rpx;
+  /* height: 160rpx; */
+  padding: 14rpx 0;
+}
+
+.case-describe text:first-child{
+  margin-bottom: 10rpx;
+}
+
+.bottom-tab{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-size: 20rpx;
+  border-top: 1rpx solid rgb(241, 241, 241);
+  padding-top: 6rpx;
+  background: white;
+  z-index: 100;
+}
+
+
+
+
+.caseresult{
+  color: #505050;
+  border-bottom: 1rpx solid #e8e8e8;
+  margin: 0 46rpx;
+  padding: 20rpx 0;
+}
+
+.danju-image{
+  width: 180rpx;
+  height: 180rpx;
+  padding: 20rpx 0;
+}
+
+/* .caseprogress-item image{
+  width: 300rpx;
+  height: 200rpx;
+} */
+
+.danjuimg{
+  display: flex;
+  flex-wrap:wrap;
+  margin: 0 46rpx;
+  justify-content: space-between;
+}
+
+.caseprograss{
+  position: fixed;
+  bottom: 0;
+  height: 80rpx;
+  width: 100%;
+  background: #366ff3;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  letter-spacing: 2rpx;
+  font-size: 26rpx;
+}
+
+
+
+
+

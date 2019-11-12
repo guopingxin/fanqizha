@@ -1,0 +1,16 @@
+<!--pages/morecase/morecase.wxml-->
+<view class="container">
+  <view class="search-box">
+    <image src="/images/home-search.png" bindtap="search"></image>
+    <input type="text" placeholder="请输入车牌号" placeholder-style="color:#b9b9b9" focus="true" bindinput="inputcarNo"></input>
+  </view>
+
+  <caselist caselist="{{caselist}}" />
+
+  <block wx:if="{{noData}}">
+    <view animation="{{animationData}}" class="nodata">
+      <view>{{tip}}</view>
+    </view>
+  </block>
+
+</view>

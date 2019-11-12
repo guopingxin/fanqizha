@@ -1,0 +1,34 @@
+/* pages/find/weituodetail/weituodetail.wxss */
+
+.container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.weituoitem{
+  width: 96%;
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  border-bottom: 1rpx solid #e8e8e8;
+  margin: 0 2%;
+}
+
+.weituotitle{
+  width: 150rpx;
+  color: rgb(180, 180, 180)
+}
+
+.jiedan{
+  width: 100%;
+  height: 90rpx;
+  background: #2d69f3;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+}

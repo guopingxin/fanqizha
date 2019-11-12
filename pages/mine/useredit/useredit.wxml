@@ -1,0 +1,22 @@
+<!--pages/mine/useredit/useredit.wxml-->
+<view class="container">
+  <form bindsubmit="submitinfor" class="form">
+    <view class="useritem margin">
+      <text>头像</text>
+      <image src="{{headimg}}" class="head-img"  catchtap="chooseimg"></image>
+    </view>
+
+    <view class="useritem">
+      <text>昵称</text>
+      <input type="text" name="name" placeholder="昵称"></input>
+    </view>
+
+    <view class="useritem">
+      <text>公司名称</text>
+      <input type="text" name="company" placeholder="陕西众邦商务信息有限公司"></input>
+    </view>
+
+    <button class="sure" form-type="submit">确定</button>
+  </form> 
+
+</view>

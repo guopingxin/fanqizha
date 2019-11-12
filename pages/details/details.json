@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "bottom-tab":"/components/bottom-tab/bottom-tab",
+    "caseprogress":"/components/caseprogress/caseprogress"
+  },
+  "navigationBarTitleText": "案件详情"
+}

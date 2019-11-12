@@ -1,0 +1,26 @@
+<!--pages/entrustcase/entrustcase.wxml-->
+<view class="container">
+  <view class="entrust-city">
+    <view>委托城市</view>
+    <picker mode="region" value='{{region}}' bindchange="bindRegionChange">
+      <view class='area' wx:if="{{regionvalue[0]}}" style="color:#000">{{regionvalue[0]}}{{regionvalue[1]}}{{regionvalue[2]}}</view>
+      <view class="area" wx:else style="color:#939393">请选择需要委托的城市</view>
+    </picker>
+  </view>
+
+  <view class="entrust-city">
+    <view>案件类型</view>
+    <picker mode="selector" range='{{casemode}}' bindchange="bindcasemodeChange">
+      <view class='area' wx:if="{{casemodevalue}}"  style="color:#000">{{casemode[casemodevalue]}}</view>
+      <view class='area' wx:else style="color:#939393">请选择案件类型</view>
+    </picker>
+  </view>
+
+  <view class="entrust-city">
+    <view>案件金额</view>
+    <input type="text" placeholder="请输入案件金额" bindinput="inputprice"></input>
+  </view>
+</view>
+<view>
+  <button class="sure" bindtap="submitweituo">确定</button>
+</view>

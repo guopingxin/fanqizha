@@ -1,0 +1,25 @@
+<!--pages/perator/perator.wxml-->
+<view class="container">
+
+  <view class="search-add">
+    <view class="search">
+      <input type="text" placeholder="搜索人员"></input>
+      <image src="/images/home-search.png"></image>
+    </view>
+    <!-- <image src="/images/icon_tianjia@2x.png" class="add"></image> -->
+  </view>
+
+  <view class="perator-box">
+    <view class="title">作业员</view>
+    <perator-list peratorArray="{{peratorArray}}" bind:taskid="peratormode"/>
+
+
+    <view class="letter">
+      <block wx:for="{{letter}}" wx:key="">
+        <view>{{item}}</view>
+      </block>
+    </view>
+  </view>
+
+
+</view>

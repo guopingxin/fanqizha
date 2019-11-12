@@ -1,0 +1,60 @@
+/* pages/perator/perator.wxss */
+.container{
+  width: 100%;
+}
+
+.search-add{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 20rpx;
+}
+
+.add{
+  width: 70rpx;
+  height: 70rpx;
+}
+
+.search{
+  width: 92%;
+  height: 70rpx;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  border: 1rpx solid rgb(241, 241, 241);
+  border-radius: 50rpx;
+  margin: 0 4%;
+
+}
+
+.search input{
+  width: 480rpx;
+}
+
+.search image{
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.perator-box{
+  position: relative;
+}
+
+.title{
+  width: 85%;
+  height: 90rpx;
+  display: flex;
+  align-items: center;
+  margin: 0 10% 0 5%; 
+  /* border-bottom: 1rpx solid #979797; */
+}
+
+.letter{
+  position: absolute;
+  right: 4rpx;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  color: #2d69f3;
+  font-size: 28rpx;
+}

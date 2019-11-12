@@ -1,0 +1,79 @@
+<!--pages/addcase/addcase.wxml-->
+<view class="container">
+
+  <view class="bg-absolute"></view>
+
+  <form bindsubmit="addsubmit">
+    <view class="case-information">
+      <view class="case-tip">
+        <view class="line"></view>
+        <text class="case-text">案件信息</text>
+      </view>
+      <view class="case-no">
+        <text>案件号</text>
+        <input type="text" placeholder="请输入案件号" placeholder-style="color:#b5b5b5" name="caseId"></input>
+      </view>
+      <view class="case-no">
+        <text>车牌号</text>
+        <input type="text" placeholder="请输入车牌号" placeholder-style="color:#b5b5b5" name="carId"></input>
+      </view>
+      <view class="case-no">
+        <text>车辆型号</text>
+        <text class="color" bind:tap="toSelectBrand" style="color:{{color}}">{{carmode}}</text>
+      </view>
+      <view class="case-no">
+        <text>出险时间</text>
+        <picker mode="multiSelector" value="{{dateTime}}" bindchange="changeDateTime"  range="{{dateTimeArray}}" name="dangertime">
+          <text class="color" wx:if="{{dangertime}}">请选择出险时间</text>
+          <view wx:else>
+            {{dateTimeArray[0][dateTime[0]]}}-{{dateTimeArray[1][dateTime[1]]}}-{{dateTimeArray[2][dateTime[2]]}} {{dateTimeArray[3][dateTime[3]]}}:{{dateTimeArray[4][dateTime[4]]}}
+          </view>
+        </picker>
+      </view>
+      <view class="case-no">
+        <text>地点</text>
+        <input type="text" placeholder="请输入出险地点" placeholder-style="color:#b5b5b5" name="dangeraddress"></input>
+      </view>
+      <view class="case-no">
+        <text>案件类型</text>
+        <!-- <text class="color">请选择案件类型</text> -->
+        <picker mode="selector" value="{{casemodeindex}}" bindchange="changecasemode"  range="{{casemodeArray}}" name="casetype">
+          <text class="color" wx:if="{{casemode}}">请选择案件类型</text>
+          <view wx:else>
+            {{casemodeArray[casemodeindex]}}
+          </view>
+        </picker>
+
+      </view>
+      <view class="case-no">
+        <text>承保公司</text>
+        <input type="text" placeholder="请输入承保公司" placeholder-style="color:#b5b5b5" name="acceptcompany"></input>
+      </view>
+      <view class="case-no">
+        <text>驾驶员</text>
+        <input type="text" placeholder="请输入驾驶员姓名" placeholder-style="color:#b5b5b5" name="drivingname"></input>
+      </view>
+      <view class="case-no">
+        <text>驾驶员电话</text>
+        <input type="text" placeholder="请输入驾驶员电话" placeholder-style="color:#b5b5b5" name="drivingtel"></input>
+      </view>
+      <view class="case-no">
+        <text>被保人</text>
+        <input type="text" placeholder="请输入被保人姓名" placeholder-style="color:#b5b5b5" name="insuredname"></input>
+      </view>
+      <view class="case-no">
+        <text>被保人电话</text>
+        <input type="text" placeholder="请输入被保人电话" placeholder-style="color:#b5b5b5" name="insuredtel"></input>
+      </view>
+
+      <view class="case-describe">
+        <text>案件描述</text>
+        <textarea placeholder="描述案件基本信息" placeholder-style="color:#b5b5b5" maxlength="-1" name="casedescript"></textarea>
+      </view>
+    </view>
+    <view class="addsubmit">
+      <button form-type="submit">确定</button>
+    </view>
+  </form>
+
+</view>

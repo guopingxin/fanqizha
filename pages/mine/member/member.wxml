@@ -1,0 +1,25 @@
+<!--pages/mine/member/member.wxml-->
+<map longitude="{{longitude}}" latitude="{{latitude}}" class="map" markers="{{marker}}" scale="{{scale}}"              bindmarkertap="markertap"></map>
+<cover-view class="search-box">
+  <cover-view>搜索</cover-view>
+  <cover-image src="/images/home-search.png" class="search-img"></cover-image>
+</cover-view>
+
+<cover-view class="scale">
+  <cover-view bindtap="addscale">+</cover-view>
+  <cover-view bindtap="reducescale">-</cover-view>
+</cover-view>
+
+<cover-view class="markerinfor" hidden="{{markerinfor}}" animation="{{animationData}}">
+  <cover-view>{{marker[index].label.content}}</cover-view>
+  <cover-view class="address">陕西省-西安市-雁塔区-科创路168号</cover-view>
+  <cover-image src="https://612d-a-data-1a3ebf-1257782233.tcb.qcloud.la/fanqizhalianmeng/icon_dianhua%402x.png?sign=7284a1694bcb0348db58663e0771fd6a&t=1568269651"  bindtap="callphone"></cover-image>
+</cover-view>
+
+  <cover-view class="whole" hidden="{{callphone}}">
+    <cover-view class="backlogin-box" animation="{{animationData}}">
+      <cover-view class="backlogin">029-89521836</cover-view>
+      <cover-view class="backlogin"  bindtap="phonenumber">呼叫</cover-view>
+      <cover-view class="backlogin" bindtap="cancel">取消</cover-view>
+    </cover-view>
+  </cover-view>

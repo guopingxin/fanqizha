@@ -1,0 +1,4 @@
+<!--pages/find/weituo/weituo.wxml-->
+<view class="container">
+  <weituoitem weituolist="{{weituolist}}" channel="{{channel}}"/>
+</view>

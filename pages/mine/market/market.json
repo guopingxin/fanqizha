@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "marketitem": "/components/weituo-item/weituo-item"
+  }
+}

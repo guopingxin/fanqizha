@@ -1,0 +1,13 @@
+<view wx:for="{{querylist}}"  wx:key=""  bindtap="todetail">
+  <view class="queryitem">
+    <view class="car">
+      <text>陕A14785</text>
+      <text>查看详情</text>
+    </view>
+    <view class="carinfor">
+      <view>奔驰600</view>
+      <view>魏咪咪</view>
+      <view>183xxxx2599</view>
+    </view>
+  </view>
+</view>

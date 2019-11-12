@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "caselist":"/components/caselist/caselist"
+  },
+  "navigationBarTitleText": "保险反欺诈联盟",
+  "enablePullDownRefresh":true,
+  "backgroundTextStyle":"light"
+}

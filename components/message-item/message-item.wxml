@@ -1,0 +1,6 @@
+<view class="message-item">
+  <view class="message-time">2019-09-03 16:30</view>
+  <view class="message-text">
+    <text>系统通知:反欺诈联盟就要上线了!</text>
+  </view>
+</view>

@@ -1,0 +1,46 @@
+<!--pages/addprogress/addprogress.wxml-->
+<view class="container">
+  <view class="describe">
+    <view>描述</view>
+    <textarea placeholder="案件进度描述" placeholder-style="color:#b5b5b5" bindinput="inputdescribe"></textarea>
+  </view>
+
+  <view class="describe">
+    <view>拍照</view>
+    <view class="imagecell">
+      <view wx:for="{{imagecell}}" wx:key="" class="imageitem">
+        <image src="{{item.path}}" class="pic"></image>
+        <image src="/images/del_icon.png" class="del" catchtap="deleteimg" id="{{item.id}}"></image>
+      </view>
+      <view class="camera" catchtap="chooseimg" wx:if="{{imagecell.length<9}}">
+        <image src="/images/icon-camera@2x.png"></image>
+        <text>{{imagecell.length}}/9</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="voice-whole">
+    <view class="voice">
+      <view>录音</view>
+      <block wx:if="{{voiceIsshow}}">
+        <image src="/images/huakuai-light.png" bindtap="changeimg"></image>
+      </block>
+      <block wx:else>
+        <image src="/images/huakuai-gray.png" bindtap="changeimg"></image>
+      </block>
+    </view>
+
+    <view class="recording-whole" wx:if="{{voiceIsshow}}">
+      <view class="recording" bindtap="voice"  style="background:{{bg}}">
+        <image src="/images/voice.png" wx:if="{{playvoice}}"></image>
+        <image src="/images/voice-white.png" wx:else></image>
+        <text wx:if="{{playvoice}}">点击录音</text>
+        <text wx:else>正在录音</text>
+      </view>
+      <image src="/images/icon_shangchuan@2x.png" class="shangchuan" bindtap="uploadvoice"></image>
+    </view>
+  </view>
+
+</view>
+
+<button class="submit" bindtap="submitprogress">确定</button>

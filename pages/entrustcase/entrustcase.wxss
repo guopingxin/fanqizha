@@ -1,0 +1,36 @@
+/* pages/entrustcase/entrustcase.wxss */
+.container{
+  width: 100%;
+}
+
+.entrust-city{
+  display: flex;
+  align-items: center;
+  height: 90rpx;
+  justify-content: space-between;
+  border-bottom: 1rpx solid rgb(241, 241, 241);
+  width: 90%;
+  margin: 0 5%;
+}
+
+picker{
+  width: 70%;
+  text-align: right;
+}
+
+/* .area{
+  color: #939393;
+} */
+
+input{
+  text-align: right;
+}
+
+.sure{
+  position: fixed;
+  bottom: 0;
+  background: #2d69f3;
+  border-radius: 0;
+  color: white;
+  width: 100%;
+}

@@ -1,0 +1,24 @@
+<view wx:for="{{questionlist}}" class="questionitem">
+  <view class="nick-box">
+    <view class="nick">
+      <image src="/images/head-portrait.png"></image>
+      <text>昵称</text>
+    </view>
+    <view class="dot-box">
+      <view class="dot"></view>
+      <view class="dot"></view>
+      <view class="dot"></view>
+    </view>
+  </view>
+
+  <view class="qa-box">
+    <view>
+      <text>Q:</text>
+      <text>如何进行索赔申请?</text>
+    </view>
+    <view>A:尽快找个修车店或4S店将车进行修复。如果责任比例不同的话要参照交警部门开具的实则责任认定书进行双方协商。</view>
+  </view>
+
+  <view>1分钟前</view>
+  
+</view>

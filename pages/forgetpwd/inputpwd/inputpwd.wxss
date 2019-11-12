@@ -1,0 +1,54 @@
+/* pages/forgetpwd/inputpwd/inputpwd.wxss */
+.container{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.forgetpwd-title{
+  font-size: 36rpx;
+  font-family: PingFangSC-Semibold, sans-serif;
+  letter-spacing: 1rpx
+}
+
+.forgetpwd-tip{
+  color: #b9b9b9;
+  margin-top: 20rpx;
+  letter-spacing: 1rpx
+}
+
+.name{
+  display: flex;
+  align-items: center;
+  margin-top: 60rpx;
+}
+
+.distance{
+  margin-top: 40rpx;
+}
+
+.name image{
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.name text{
+  margin-left: 20rpx;
+}
+
+.name-content{
+  border-bottom: 1rpx solid #b9b9b9;
+}
+
+input{
+  padding: 14rpx 0 14rpx 80rpx;
+}
+
+.apply button{
+  width: 300rpx;
+  display: flex;
+  justify-content: center;
+  background: #2d69f3;
+  color: white;
+  border-radius: 50rpx;
+  margin-top: 200rpx;
+}

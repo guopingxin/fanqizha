@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "caselist":"/components/case-item/case-item"
+  },
+  "navigationBarTitleText": "案件记录"
+}

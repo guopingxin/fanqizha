@@ -1,0 +1,62 @@
+.weituo-item{
+  width: 94%;
+  box-shadow: 0 0 4rpx 2rpx rgba(180, 180, 180, 0.5); 
+  margin: 20rpx 3% 0 3%;
+  padding: 14rpx 10rpx;
+  border-radius: 10rpx;
+}
+
+.weituoorderId text{
+  text-align: left;
+}
+
+.weituocompany{
+  display: flex;
+  align-items: center;
+  padding: 6rpx 10rpx;
+  color: rgb(180, 180, 180);
+}
+
+.line{
+  width: 4rpx;
+  height: 30rpx;
+  background: rgb(180, 180, 180);
+  margin: 0 10rpx;
+}
+
+.weituotime{
+  padding: 0 0 6rpx 10rpx;
+  color: rgb(180, 180, 180);
+}
+
+.weituostyleprice{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10rpx;
+  color: #fa7a02;
+}
+
+.weituostyle{
+  position: relative;
+}
+
+.weituostyle image{
+  width: 160rpx;
+  height: 60rpx;
+}
+
+.weituomode{
+  position: absolute;
+  top:10rpx;
+  left: 16rpx;
+  color: #366ff3;
+}
+
+.price{
+  font-size: 34rpx;
+  font-weight: 600;
+}
+
+.col{
+  color: #000 !important;
+}

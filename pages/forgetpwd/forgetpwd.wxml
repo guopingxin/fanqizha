@@ -1,0 +1,38 @@
+<!--pages/forgetpwd/forgetpwd.wxml-->
+<view class="container">
+  <view class="forgetpwd-title">
+    <text>请输入您绑定的手机号码</text>
+  </view>
+  <view class="forgetpwd-tip">
+    <text>按步骤即可找回密码</text>
+  </view>
+
+   <form bindsubmit="forgetsubmit">
+    <view>
+      <view class="name">
+        <image src="/images/register-phone.png"></image>
+        <text>手机</text>
+      </view>
+      <view class="name-content">
+        <input type="text" placeholder="请输入您的手机号" placeholder-style="color:#b9b9b9" bindinput="obtainphone" name = "phone"></input>
+      </view>
+    </view>
+
+    <view>
+      <view class="name distance">
+        <image src="/images/code.png"></image>
+        <text>验证码</text>
+      </view>
+      <view class="code-content">
+        <input type="text" placeholder="请输入您收到的验证码" placeholder-style="color:#b9b9b9" class="code" name="code"></input>
+        <text bindtap="sendcode">{{code}}</text>
+      </view>
+    </view>
+
+    <view class="apply">
+      <button form-type="submit">下一步</button>
+    </view>
+
+  </form>
+
+</view>

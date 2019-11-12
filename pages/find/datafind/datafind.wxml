@@ -1,0 +1,9 @@
+<!--pages/find/datafind/datafind.wxml-->
+<view class="container">
+  <view class="search-box">
+    <image src="/images/home-search.png"></image>
+    <input type="text" placeholder="请输入您的问题搜索答案" placeholder-style="color:#b9b9b9"></input>
+  </view>
+
+  <query-list querylist="{{querylist}}" flag="1"/>
+</view>

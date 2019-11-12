@@ -1,0 +1,35 @@
+<!--components/caselist/caselist.wxml-->
+<block wx:for="{{caselist}}" wx:key="">
+
+  <view class="case-item" bindtap="todetails" data-type="{{item.schedule}}" data-caseid="{{item.id}}">
+    <view class="case-serial-num" wx:if="{{serialshow}}">
+      <image src="/images/serial-number.png"></image>
+      <text>{{index+1}}</text>
+    </view>
+    <view class="case-content">
+      <text>{{item.case_no}}</text>
+      <text class="color" wx:if="{{item.case_type == 1}}">车务调查</text>
+      <text class="color" wx:elif="{{item.case_type == 2}}">人伤调查</text>
+      <text class="color" wx:else>财产险调查</text>
+    </view>
+    <view wx:if="{{item.schedule==4}}" class="case-state">
+      <image src="/images/icon_yichuli@2x.png"></image>
+    </view>
+    <view wx:elif="{{item.schedule==3}}" class="case-state">
+      <image src="/images/icon_jinxingzhong@2x.png"></image>
+    </view>
+    <view wx:elif="{{item.schedule==2}}" class="case-state">
+      <image src="/images/icon_jinxingzhong@2x.png"></image>
+    </view>
+    <view wx:elif="{{item.schedule==5}}" class="case-state">
+      <image src="/images/icon_jinxingzhong@2x.png"></image>
+    </view>
+    <view wx:elif="{{item.schedule==6}}" class="case-state">
+      <image src="/images/icon_jinxingzhong@2x.png"></image>
+    </view>
+    <view wx:else class="case-state">
+      <image src="/images/icon_weichuli@2x.png"></image>
+    </view>
+  </view>
+
+</block>

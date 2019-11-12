@@ -1,0 +1,19 @@
+<!--pages/mine/personmanage/addpersonnel/addpersonnel.wxml-->
+<view class="container">
+  <form bindsubmit="addpersonal">
+    <view class="personalname">
+      <label>姓　　名</label>
+      <input type="text" placeholder="请输入姓名" name='username'></input>
+    </view>
+    <view class="personalname">
+      <label>密　　码</label>
+      <input type="text" placeholder="初始密码123456" name='password'></input>
+    </view>
+    <view class="personalname">
+      <label>联系电话</label>
+      <input type="text" placeholder="请输入电话号码" name="tel"></input>
+    </view>
+
+    <button form-type="submit">添加</button>
+  </form>
+</view>

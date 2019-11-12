@@ -1,0 +1,47 @@
+/* components/caselist/caselist.wxss */
+
+.case-item{
+  width: 94%;
+  margin: 2% 3%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 0 4rpx 2rpx rgba(241, 241, 241, 0.50);
+  border-radius: 10rpx;
+  border: 1rpx solid rgb(241, 241, 241);
+  padding: 20rpx 20rpx;
+}
+
+.case-serial-num{
+  position: relative;
+  color: white;
+  margin-right: 30rpx;
+}
+
+.case-serial-num image{
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.case-serial-num text{
+  position: absolute;
+  top: 4rpx;
+  left: 16rpx;
+}
+
+.case-content{
+  display: flex;
+  flex-direction: column;
+  /* margin-right: 100rpx; */
+  width: 70%;
+}
+
+.color{
+  color: #b9b9b9;
+  font-size: 24rpx;
+}
+
+.case-state image{
+  width: 120rpx;
+  height: 36rpx;
+}

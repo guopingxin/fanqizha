@@ -1,0 +1,10 @@
+<view wx:for="{{caselist}}"  wx:key="">
+  <view class="caseitem" bindtap="todetail">
+    <view>1456325874125899632587452</view>
+    <view class="casestyletext">案件类型</view>
+    <view class="casestyletext">2019-09-11 14:12</view>
+    <image class="casestyle" src="/images/icon_yichuli@2x.png" wx:if="{{item.type == 1}}"></image>
+    <image class="casestyle" src="/images/icon_jinxingzhong@2x.png" wx:if="{{item.type == 2}}"></image>
+    <image class="casestyle" src="/images/icon_weichuli@2x.png" wx:if="{{item.type == 3}}"></image>
+  </view>
+</view>

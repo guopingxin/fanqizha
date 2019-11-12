@@ -1,0 +1,38 @@
+
+.checkedperator{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 85%;
+  margin: 0 10% 0 5%;
+  flex-direction: column;
+}
+
+.peratorinfo{
+  display: flex;
+  align-items: center;
+  border-bottom: 1rpx solid rgb(241, 241, 241);
+  justify-content: space-between;
+  height: 80rpx;
+  width: 100%;
+}
+
+.perator-name{
+  display: flex;
+  align-items: center;
+}
+
+.perator-name image{
+  width: 40rpx;
+  height: 40rpx;
+  margin-right:20rpx;
+}
+
+.submit{
+  position: fixed;
+  bottom: 0;
+  background: #2d69f3;
+  border-radius: 0;
+  color: white;
+  width: 100%;
+}

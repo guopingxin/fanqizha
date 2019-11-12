@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "perator-list":"/components/perator-list/perator-list"
+  },
+  "navigationBarTitleText": "分配作业员"
+}

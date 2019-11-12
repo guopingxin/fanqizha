@@ -1,0 +1,17 @@
+<form bindsubmit='submitperator'>
+  <radio-group bindchange="radioChange" class='checkedperator' name='radiogroup'>
+    <view wx:for="{{peratorArray}}" wx:key="" class="peratorinfo">
+      <view class="perator-name">
+        <image src="/images/login-user.png"></image>
+        <text>{{item.nickname}}</text>
+      </view>
+
+      <view>
+        <label>
+          <radio value="{{item.id}}" checked="{{item.checked}}"/>
+        </label>
+      </view>
+    </view>
+  </radio-group>
+  <button class='submit' form-type="submit">确认分配</button>
+</form>

@@ -1,0 +1,56 @@
+/* pages/mine/query/querydetail/cardetail/cardetail.wxss */
+.container{
+  width: 92%;
+  margin: 0 4%;
+}
+
+.base-title{
+  margin: 4% 0 4% 0;
+  font-weight: 600;
+}
+
+.add{
+  padding-bottom:2.5%;
+  display: flex;
+  font-size: 26rpx;
+  align-items: center;
+}
+
+.time{
+  width: 180rpx;
+  margin-right: 50rpx; 
+  color: #a7a8aa;
+}
+
+.date{
+  width: 180rpx;
+}
+
+.eye{
+  width: 55rpx;
+  height: 34rpx;
+}
+
+.line{
+  border-bottom: 1rpx solid rgb(241, 241, 241);
+}
+
+.accident{
+  padding-bottom: 16rpx;
+  border-bottom: 1rpx solid rgb(241, 241, 241);
+}
+
+.accident-box{
+  display: flex;
+  justify-content: space-between;
+}
+
+.accidentimg{
+  width: 200rpx;
+  height: 200rpx;
+}
+
+.isf{
+  margin: 0 10rpx;
+  color: #a7a8aa;
+}

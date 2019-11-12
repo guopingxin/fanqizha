@@ -1,0 +1,20 @@
+/* pages/find/datafind/datafind.wxss */
+.search-box{
+  width: 94%;
+  height: 80rpx;
+  margin: 2% 3%;
+  border-radius: 20rpx;
+  box-shadow: 0 0 4rpx 2rpx rgba(241, 241, 241, 0.50); 
+  border: 1rpx solid rgb(241, 241, 241);
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  background: white;
+  justify-content: space-between;
+  padding: 0 30rpx;
+}
+
+.search-box image:first-child{
+  width: 40rpx;
+  height: 40rpx;
+}

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "query-list":"/components/query-item/query-item"
+  },
+  "navigationBarTitleText": "查询记录"
+}

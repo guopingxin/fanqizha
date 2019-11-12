@@ -1,0 +1,38 @@
+<!--pages/forgetpwd/inputpwd/inputpwd.wxml-->
+<view class="container">
+  <view class="forgetpwd-title">
+    <text>您重新编辑您的密码</text>
+  </view>
+  <view class="forgetpwd-tip">
+    <text>建议您的新密码以简单好记为标准</text>
+  </view>
+
+   <form bindsubmit="forgetsubmit">
+    <view>
+      <view class="name">
+        <image src="/images/register-password.png"></image>
+        <text>密码</text>
+      </view>
+      <view class="name-content">
+        <input type="text" password='true' placeholder="请输入您的新密码" placeholder-style="color:#b9b9b9" name="password"></input>
+      </view>
+    </view>
+
+    <view>
+      <view class="name">
+        <image src="/images/register-password.png"></image>
+        <text>确认密码</text>
+      </view>
+      <view class="name-content">
+        <input type="text"  password='true' placeholder="请再次输入您的密码" placeholder-style="color:#b9b9b9" name="password1"></input>
+      </view>
+    </view>
+
+    <view class="apply">
+      <button form-type="submit">确定</button>
+    </view>
+
+  </form>
+
+</view>
+

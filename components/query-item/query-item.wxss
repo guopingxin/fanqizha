@@ -1,0 +1,49 @@
+.queryitem{
+  width: 94%;
+  margin: 2% 3%;
+  border-radius: 10rpx;
+  border: 1rpx solid rgb(241, 241, 241);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 180rpx;
+}
+
+.car{
+  display: flex;
+  justify-content: space-between;
+  width: 94%;
+  margin: 0 3%;
+}
+
+.car text:first-child{
+  font-family: PingFangSC-Semibold, sans-serif;
+}
+
+.car text:last-child{
+  color: #f79502;
+  font-size: 24rpx;
+}
+
+.carinfor{
+  display: flex;
+  width: 94%;
+  margin: 0 3%;
+}
+
+.carinfor view{
+  border: 1rpx solid #366ff3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50rpx;
+  padding: 0 26rpx;
+  border-radius: 30rpx;
+  margin-right: 16rpx;
+  font-size: 24rpx;
+  color: #366ff3;
+  margin-top: 16rpx;
+}
+
+
+

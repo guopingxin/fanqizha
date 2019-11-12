@@ -1,0 +1,147 @@
+<!--pages/details/details.wxml-->
+<view class="container">
+  <view class="bg-absolute"></view>
+  <view class="logo-absolute">
+    <image src="/images/case-logo.png"></image>
+  </view>
+  <view class="details">
+
+    <view class="investigation">车务调查</view>
+
+    <view class="case-details">
+      <view class="details-tip">
+        <view class="line"></view>
+        <text>案件信息</text>
+      </view>
+
+      <view class="case-no">
+        <text>案件号</text>
+        <text class="color">{{caseInfo.case_no}}</text>
+      </view>
+
+      <view class="case-no">
+        <text>车辆型号</text>
+        <text class="color">{{caseInfo.car_model}}</text>
+      </view>
+
+      <view class="case-no">
+        <text>出险时间</text>
+        <text class="color">{{caseInfo.happen_time}}</text>
+      </view>
+
+      <view class="case-no">
+        <text>地点</text>
+        <text class="color">{{caseInfo.happen_place}}</text>
+      </view>
+
+      <view class="case-no">
+        <text>承保公司</text>
+        <text class="color">{{caseInfo.insurance}}</text>
+      </view>
+
+      <view class="case-no">
+        <text>驾驶员</text>
+        <text class="color">{{caseInfo.driver_name}}</text>
+      </view>
+
+      <view class="case-no">
+        <text>驾驶员电话</text>
+        <text class="color">{{caseInfo.driver_mobile}}</text>
+      </view>
+
+      <view class="case-no">
+        <text>被保人</text>
+        <text class="color">{{caseInfo.insured_name}}</text>
+      </view>
+
+      <view class="case-no">
+        <text>被保人电话</text>
+        <text class="color">{{caseInfo.insured_mobile}}</text>
+      </view>
+
+      <view class="case-describe">
+        <text>案件描述</text>
+        <text>{{caseInfo.describe}}</text>
+      </view>
+
+      <view wx:if="{{schedules.length>0}}">
+        <view class="details-tip tip">
+          <view class="line"></view>
+          <text>案件进度</text>
+        </view>
+
+        <caseprogress schedules='{{schedules}}'></caseprogress>
+
+        <!-- <view class="case-progress">
+          <view class="casetime">2019-09-12 15:27</view>
+          <view class="caseprogress-item">
+            <view>约见所谓驾驶员</view>
+            <image src="cloud://fanqizhalianmeng-8ygjc.6661-fanqizhalianmeng-8ygjc/caseprogress/caseprogress1.jpg" bindtap="previewImage" data-imgurl="cloud://fanqizhalianmeng-8ygjc.6661-fanqizhalianmeng-8ygjc/caseprogress/caseprogress1.jpg"></image>
+          </view>
+          <view class="circle"></view>
+          <view class="dot-line"></view>
+        </view>
+
+        <view class="case-progress">
+          <view class="casetime">2019-09-12 15:27</view>
+          <view class="caseprogress-item">
+            <view>约见被保险人</view>
+            <image src="cloud://fanqizhalianmeng-8ygjc.6661-fanqizhalianmeng-8ygjc/caseprogress/caseprogress2.jpg" bindtap="previewImage" data-imgurl="cloud://fanqizhalianmeng-8ygjc.6661-fanqizhalianmeng-8ygjc/caseprogress/caseprogress2.jpg"></image>
+          </view>
+          <view class="circle"></view>
+          <view class="dot-line"></view>
+        </view>
+
+        <view class="case-progress">
+          <view class="casetime">2019-09-12 15:27</view>
+          <view class="caseprogress-item">
+            <view>填写放弃索赔</view>
+            <image src="cloud://fanqizhalianmeng-8ygjc.6661-fanqizhalianmeng-8ygjc/caseprogress/caseprogress3.jpg" bindtap="previewImage" data-imgurl="cloud://fanqizhalianmeng-8ygjc.6661-fanqizhalianmeng-8ygjc/caseprogress/caseprogress3.jpg"></image>
+          </view>
+          <view class="circle"></view>
+          <view class="dot-line"></view>
+        </view>
+
+        <view class="case-progress">
+          <view class="casetime">2019-09-12 15:27</view>
+          <view class="caseprogress-item">
+            <view>放弃索赔声明</view>
+            <image src="cloud://fanqizhalianmeng-8ygjc.6661-fanqizhalianmeng-8ygjc/caseprogress/caseprogress4.jpg" bindtap="previewImage" data-imgurl="cloud://fanqizhalianmeng-8ygjc.6661-fanqizhalianmeng-8ygjc/caseprogress/caseprogress4.jpg"></image>
+          </view>
+          <view class="circle"></view>
+        </view> -->
+      </view>
+
+      <view>
+        <view class="details-tip tip">
+          <view class="line"></view>
+          <text>案件结果</text>
+        </view>
+        <view class="caseresult">拒赔</view>
+      </view>
+
+      <view wx:if="{{caseInfo.bill}}">
+        <view class="details-tip tip">
+          <view class="line"></view>
+          <text>单据</text>
+        </view>
+        <view class="danjuimg">
+          <image src="cloud://fanqizhalianmeng-8ygjc.6661-fanqizhalianmeng-8ygjc/caseprogress/danju1.jpg" class='danju-image' bindtap="previewImage" data-imgurl="cloud://fanqizhalianmeng-8ygjc.6661-fanqizhalianmeng-8ygjc/caseprogress/danju1.jpg"></image>
+          <image src="cloud://fanqizhalianmeng-8ygjc.6661-fanqizhalianmeng-8ygjc/caseprogress/danju2.jpg" class='danju-image' bindtap="previewImage" data-imgurl="cloud://fanqizhalianmeng-8ygjc.6661-fanqizhalianmeng-8ygjc/caseprogress/danju2.jpg"></image>
+          <image src="cloud://fanqizhalianmeng-8ygjc.6661-fanqizhalianmeng-8ygjc/caseprogress/danju3.jpg" class='danju-image' bindtap="previewImage" data-imgurl="cloud://fanqizhalianmeng-8ygjc.6661-fanqizhalianmeng-8ygjc/caseprogress/danju3.jpg"></image>
+        </view>
+      </view>
+    </view>
+
+    <view class="blue">
+      <image src="cloud://fanqizhalianmeng-8ygjc.6661-fanqizhalianmeng-8ygjc/caseprogress/blue.png"></image>
+    </view>
+  </view>
+
+
+  <view class="caseprograss" hidden="{{prograss}}">{{caseprograss}}</view>
+
+  <view class="bottom-tab" hidden="{{bottomTab}}">
+    <bottom-tab tab="{{tab}}" caseid="{{caseid}}"/>
+  </view>
+</view>

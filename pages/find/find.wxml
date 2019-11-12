@@ -1,0 +1,12 @@
+<!--pages/find/find.wxml-->
+<view class="whole">
+  <view class="project-item" bindtap="weituo">
+    <image src="cloud://fanqizhalianmeng-8ygjc.6661-fanqizhalianmeng-8ygjc/find/pic_weituoshichang@2x.png"></image>
+  </view>
+  <view class="project-item" bindtap="datafind">
+    <image src="cloud://fanqizhalianmeng-8ygjc.6661-fanqizhalianmeng-8ygjc/find/pic_shujuchaxun.png"></image>
+  </view>
+  <!-- <view class="project-item">
+    <image src="https://612d-a-data-1a3ebf-1257782233.tcb.qcloud.la/fanqizhalianmeng/pic_yinanwenda.png?sign=98d2a80b25154cd802055ea4daaa5120&t=1568256848"></image>
+  </view> -->
+</view>

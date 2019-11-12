@@ -1,0 +1,73 @@
+<!--pages/mine/mine.wxml-->
+<view class="container">
+  <view class="bg-absolute"></view>
+  <view class="personal-box" style="background-image:url('data:image/png;base64,{{personalbg}}');background-size:100% 100%; width:94%; margin:0 3%;height:260rpx;" >
+    <view>
+      <view class="head-img" bindtap="useredit">
+        <image src="/images/head-portrait.png"></image>
+        <text>编辑</text>
+      </view>
+    </view>
+    <view class="nickname">昵称</view>
+    <view class="company">陕西众邦商务信息有限公司</view>
+  </view>
+
+  <view>
+    <view class="zhanghu" bindtap="wallet">
+      <image src="/images/icon_wd_zhqb@2x.png"></image>
+      <text>账户钱包</text>
+      <view class="arrows"></view>
+    </view>
+
+    <view class="zhanghu" bindtap="query">
+      <image src="/images/icon_wd_cxjl@2x.png"></image>
+      <text>查询记录</text>
+      <view class="arrows"></view>
+    </view>
+
+    <view class="zhanghu" bindtap="caserecord">
+      <image src="/images/icon_wd_ajjl@2x.png"></image>
+      <text>案件记录</text>
+      <view class="arrows"></view>
+    </view>
+
+    <view class="zhanghu" bindtap="marketrecord">
+      <image src="/images/icon_wd_scjl@2x.png"></image>
+      <text>市场记录</text>
+      <view class="arrows"></view>
+    </view>
+
+    <!-- <view class="zhanghu">
+      <image src="/images/icon_wd_wdjl@2x.png"></image>
+      <text>问答记录</text>
+      <view class="arrows"></view>
+    </view> -->
+
+    <view class="zhanghu" bindtap="personmanage">
+      <image src="/images/icon_wd_rygl@2x.png"></image>
+      <text>人员管理</text>
+      <view class="arrows"></view>
+    </view>
+
+    <view class="zhanghu" bindtap="memberorganization">
+      <image src="/images/icon_wd_cyjg@2x.png"></image>
+      <text>成员机构</text>
+      <view class="arrows"></view>
+    </view>
+
+    <view class="zhanghu" bindtap="backlogin">
+      <image src="/images/icon_wd_tcdl@2x.png"></image>
+      <text>退出登录</text>
+      <view class="arrows"></view>
+    </view>
+  </view>
+
+  <view class="whole" hidden="{{backlogin}}">
+    <view class="backlogin-box" animation="{{animationData}}">
+      <view class="backlogin">退出登录</view>
+      <view class="backlogin border"  bindtap="sure">确定</view>
+      <view class="backlogin border1" bindtap="cancel">取消</view>
+    </view>
+  </view>
+  
+</view>

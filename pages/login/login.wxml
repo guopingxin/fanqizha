@@ -1,0 +1,35 @@
+<!--pages/login/login.wxml-->
+<view class="container">
+  <view class="login-top">
+    <image src="/images/login-bg.png" mode="widthFix" class="login-bg"/>
+    <text>欢迎登录</text>
+    <image src="/images/head-portrait.png" class="head-portrait"/>
+  </view>
+
+  <form class="user-pwd-form" bindsubmit="loginsubmit">
+    <view class="user">
+      <view class="user-logo">
+        <image src='/images/login-user.png'></image>
+      </view>
+      <input type="text" name="username" placeholder="请输入您的账号" placeholder-style="color:#b9b9b9" ></input>
+    </view>
+
+    <view class="user pwd">
+      <view class="user-logo">
+        <image src="/images/login-password.png"></image>
+      </view>
+      <input type="text" name="password"  password='true' placeholder="请输入您的密码" placeholder-style="color:#b9b9b9" ></input>
+    </view>
+
+    <view class="forget-style" bindtap="forgetpwd">
+      <view class="arrows"></view>
+      <view class="arrows"></view>
+      <text>忘记密码</text>
+    </view>
+
+    <view class="login-register">
+      <view class="register" bindtap="register">申请加盟</view>
+      <button form-type="submit">登录</button>
+    </view>
+  </form>
+</view>

@@ -1,0 +1,8 @@
+<!--pages/mine/wallet/wallet.wxml-->
+<view class="details">零钱明细</view>
+<view class="walletinfor">
+  <image src="/images/pic_zhanghuqianbao@2x.png"></image>
+  <text>我的零钱</text>
+  <text class="price">¥300.00</text>
+  <view class="tixian">提现</view>
+</view>

@@ -1,0 +1,23 @@
+.caseitem{
+  position: relative;
+  margin: 2% 3%;
+  width: 94%;
+  padding: 14rpx 14rpx;
+  border: 1rpx solid rgb(241, 241, 241);
+  border-radius: 10rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.casestyletext{
+  font-size: 24rpx;
+  color: #b9b9b9;
+}
+
+.casestyle{
+  width: 120rpx;
+  height: 38rpx;
+  position: absolute;
+  top: 24rpx;
+  right: 14rpx;
+}

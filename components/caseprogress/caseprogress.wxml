@@ -1,0 +1,30 @@
+<view wx:for="{{schedules}}" wx:key=""  wx:for-index ='index' wx:for-item="item">
+  <view class="case-progress">
+    <view class="casetime">{{item.date}}</view>
+    <view class="caseprogress-item">
+      <textarea value="{{item.title}}" disabled="true" maxlength="-1"></textarea>
+      <view wx:if="{{item.picture}}" class="imgwhole">
+
+        <view wx:for="{{item.picture}}" wx:for-item="items" wx:for-index="indexs" wx:key="">
+          <image src="{{imageurl}}/uploads/work/{{items}}"></image>
+        </view>
+
+      </view>
+
+      <!-- <image src="cloud://fanqizhalianmeng-8ygjc.6661-fanqizhalianmeng-8ygjc/caseprogress/caseprogress1.jpg" bindtap="previewImage" data-imgurl="cloud://fanqizhalianmeng-8ygjc.6661-fanqizhalianmeng-8ygjc/caseprogress/caseprogress1.jpg"></image> -->
+    </view>
+    <view class="circle"></view>
+    
+    <view class="dot-line" hidden="{{index+1 == schedules.length}}" wx:if="{{item.picture.length>0 && item.picture.length<=3}}" style="height:320rpx;"></view>
+    <view class="dot-line" hidden="{{index+1 == schedules.length}}" wx:elif="{{item.picture.length>3 && item.picture.length<=6}}" style="height:520rpx;"></view>
+    <view class="dot-line" hidden="{{index+1 == schedules.length}}" wx:elif="{{item.picture.length>6 && item.picture.length<=9}}" style="height:740rpx;"></view>
+    <view class="dot-line" hidden="{{index+1 == schedules.length}}" wx:else  style="height:120rpx;"></view>
+
+    <view wx:if="{{item.voice}}" class="voicebg">
+      <image src="/images/triangle.png"></image>
+      <text>60s</text>
+    </view>
+
+  </view>
+
+</view>

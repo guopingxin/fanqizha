@@ -1,0 +1,151 @@
+/* pages/mine/query/querydetail/querydetail.wxss */
+.container{
+  width: 100%;
+}
+
+.bg-absolute{
+  position: absolute;
+  height: 130rpx;
+  background: #366ff3;
+  z-index: -1;
+  top: 0;
+  width: 100%;
+}
+
+.top-query{
+  width: 92%;
+  margin: 0 4%;
+  height: 310rpx;
+  box-shadow: 0 0 2rpx 2rpx rgba(241, 241, 241, 0.5);
+  border: 1rpx solid rgb(241,241,241);
+  border-radius: 10rpx;
+  background: white;
+}
+
+.degree-box{
+  display: flex;
+  flex-direction: column;
+  height: 100rpx;
+  justify-content: center;
+  font-size: 20rpx;
+  padding-bottom: 20rpx;
+  color: #000;
+}
+
+.carid{
+  color: #366ff3;
+  font-size: 38rpx;
+  margin: 4.5% 4% 0;
+  font-weight: 600;
+}
+
+.query-degree{
+  display: flex;
+  align-items: center;
+  height: 100rpx;
+  font-size: 26rpx;
+  color: #a7a8aa;
+  width: 92%;
+  margin:0 4%;
+}
+
+.query-item{
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  margin-right: 3%;
+}
+
+.margin{
+  margin-right: 80rpx;
+  color: #f79502;
+  font-size: 32rpx;
+}
+
+.degree-tip{
+  display: flex;
+  width: 210rpx;
+  justify-content: space-between;
+}
+
+.degree-tip text{
+  width: 70rpx;
+  text-align: center;
+}
+
+.degree-color1{
+  background: rgb(255, 153, 0);
+  height: 8rpx;
+  border-top-left-radius: 30rpx;
+  border-bottom-left-radius: 30rpx;
+}
+
+.degree-color2{
+  background: rgb(241, 227, 19);
+  height: 8rpx;
+}
+
+.degree-color3{
+  background: rgb(3, 197, 3);
+  height: 8rpx;
+  border-top-right-radius: 30rpx;
+  border-bottom-right-radius: 30rpx;
+}
+
+.cartiplist{
+  width: 92%;
+  margin: 0 4%;
+  display: flex;
+  font-size: 24rpx;
+  color: #366ff3;
+  flex-wrap:wrap;
+}
+
+.cartip{
+  padding: 5rpx 30rpx;
+  border-radius: 30rpx;
+  border: 1rpx solid #366ff3;
+  margin-right: 20rpx;
+  margin-bottom: 16rpx;
+}
+
+.car-infor{
+  margin: 2% 4%;
+  width: 92%;
+  border: 1rpx solid rgb(241,241,241);
+  box-shadow: 0 0 2rpx 2rpx rgba(241, 241, 241, 0.5);
+  border-radius: 10rpx;
+}
+
+.cartitle{
+  margin: 4% 0 0 4%;
+  font-weight: 600;
+}
+
+.carunderwriting-box{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 14rpx;
+}
+
+.risknum{
+  color: #f79502;
+}
+
+.todetail{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  font-size: 24rpx;
+  color: #f79502;
+}
+
+.arrows{
+  width: 14rpx;
+  height: 14rpx;
+  border-top: 3rpx solid #b9b9b9;
+  border-right: 3rpx solid #b9b9b9;
+  transform: rotate(45deg);
+  margin-top: 4rpx;
+}

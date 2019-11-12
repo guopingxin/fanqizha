@@ -1,0 +1,25 @@
+<view class="co-bottom-tab">
+
+  <view class="whole" hidden="{{danju}}">
+    <view class="backlogin-box" animation="{{animationData}}">
+      <view class="backlogin">拍照</view>
+      <view class="backlogin border" bindtap="cancel1">从手机相册选择</view>
+      <view class="backlogin border1" bindtap="cancel1" data-type="danju">取消</view>
+    </view>
+  </view>
+
+  <view class="whole" hidden="{{jiean}}">
+    <view class="backlogin-box" animation="{{animationData}}">
+      <view class="backlogin">是否结案?</view>
+      <view class="backlogin border" bindtap="cancel2">确定</view>
+      <view class="backlogin border1" bindtap="cancel2" data-type="jiean">取消</view>
+    </view>
+  </view>
+  
+  <block wx:for="{{tab}}" wx:key="">
+    <view class="bottom-tab-item" bindtap="tabitem" data-itemtext="{{item.text}}">
+      <image src="{{item.imgurl}}"></image>
+      <text>{{item.text}}</text>
+    </view>
+  </block>
+</view>

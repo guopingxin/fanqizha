@@ -1,0 +1,49 @@
+<!--pages/mine/personmanage/personmanage.wxml-->
+<view class="container">
+  <view class="bg-absolute"></view>
+  <view class="top-search">
+    <view class="search-box">
+      <input type="text" placeholder="搜索人员"></input>
+      <image src="/images/home-search.png"></image>
+    </view>
+    <image src='/images/icon_tianjia@2x.png' class="add" bindtap="add"></image>
+  </view>
+
+  <view class="operator">
+    <block wx:for="{{operatorlist}}" wx:key="">
+      <view class="letter-item">{{item.firstname}}</view>
+      <block wx:for="{{item.operator}}" wx:key="" wx:for-item='item1'>
+        <view class="operatorname" bindtap="edit">{{item1.name}}</view>
+        <!-- <view class="project-item" bindtap="edit">
+          <block wx:for="{{item1.tip}}" wx:for-item="item2">
+            <text>{{item2}}</text>
+          </block>
+        </view> -->
+      </block>
+    </block>
+    <view class="letter">
+      <block wx:for="{{letter}}" wx:key="">
+        <view>{{item}}</view>
+      </block>
+    </view>
+  </view>
+
+  
+
+  <view hidden="{{isshow}}" class="whole" bindtap="close">
+    <view class="add-box" animation="{{animationData}}">
+      <image src="/images/icon_Personnel-management_contact@2x.png"  bindtap="lianxi"></image>
+      <image src="/images/icon_Personnel-management_edit@2x.png" bindtap="add"></image>
+      <image src="/images/icon_Personnel-management_Disable@2x.png" bindtap="jinyong"></image>
+      <image src="/images/icon_Personnel-management_delete@2x.png" bindtap="shanchu"></image>
+    </view>
+  </view>
+
+  <view class="whole" hidden="{{islianxi}}">
+    <view class="backlogin-box" animation="{{animationData}}">
+      <view class="backlogin">17795653927</view>
+      <view class="backlogin border"  bindtap="cancel">呼叫</view>
+      <view class="backlogin border1" bindtap="cancel">取消</view>
+    </view>
+  </view>
+</view>
